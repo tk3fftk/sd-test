@@ -6,7 +6,7 @@ const calc = require('../lib/calc');
 describe('calc', function () {
     it('should add numbers', function () {
         assert.equal(calc.add(3, 7), 10);
-        assert.equal(calc.add(-5, 3), -1);
+        assert.equal(calc.add(-5, 3), -2);
     });
 
     it('should sub numbers', function () {
