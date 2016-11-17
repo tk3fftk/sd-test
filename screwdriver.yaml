@@ -4,3 +4,4 @@ jobs:
     steps:
       - init: npm install
       - test: npm test
+      - pack: npm pack
