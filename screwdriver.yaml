@@ -5,4 +5,5 @@ jobs:
       - init: npm install
       - test: npm test
       - pack: npm pack
+      - printenv: printenv
       - publish: npm publish
