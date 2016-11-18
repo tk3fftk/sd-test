@@ -6,4 +6,5 @@ jobs:
       - test: npm test
       - pack: npm pack
       - printenv: printenv
+      - mv: mv screwdriver-sd-test-0.0.1.tgz $SD_ARTIFACTS_DIR
       - publish: npm publish
