@@ -34,8 +34,5 @@
     "eslint-config-screwdriver": "^2.0.9",
     "jenkins-mocha": "^3.0.0"
   },
-  "dependencies": {},
-  "publishConfig": {
-    "registry": "http://172.16.164.157:9002"
-  }
+  "dependencies": {}
 }

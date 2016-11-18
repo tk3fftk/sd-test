@@ -5,4 +5,3 @@ jobs:
       - init: npm install
       - test: npm test
       - pack: npm pack
-      - publish: npm deploy
