@@ -1,6 +1,6 @@
 jobs:
   main:
-    image: node:6
+    image: docker-registry.corp.yahoo.co.jp:4443/ynodejs/v6-thin:1-STABLE
     steps:
       - init: npm install
       - test: npm test
