@@ -7,4 +7,6 @@ jobs:
       - pack: npm pack
       - printenv: printenv
       - mv: mv screwdriver-sd-test-0.0.1.tgz $SD_ARTIFACTS_DIR
-      - publish: npm publish
+      - meta_set: /opt/sd/meta set foo bar && echo $?
+      - meta_get: /opt/sd/meta get foo
+      - cat: cat /sd/meta/meta.json
