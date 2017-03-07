@@ -1,12 +1,12 @@
 jobs:
   main:
-    image: docker-registry.corp.yahoo.co.jp:4443/ynodejs/v6-thin:1-STABLE
+    image: node:6
     steps:
       - init: npm install
       - test: npm test
       - pack: npm pack
       - printenv: printenv
       - mv: mv screwdriver-sd-test-0.0.1.tgz $SD_ARTIFACTS_DIR
-      - meta_set: /opt/sd/meta set foo bar && echo $?
-      - meta_get: /opt/sd/meta get foo && echo $?
+      - set: /opt/sd/meta set foo bar && echo $?
+      - get: /opt/sd/meta get foo && echo $?
       - cat: cat /sd/meta/meta.json
