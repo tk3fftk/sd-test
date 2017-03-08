@@ -8,5 +8,9 @@ jobs:
       - printenv: printenv
       - mv: mv screwdriver-sd-test-0.0.1.tgz $SD_ARTIFACTS_DIR
       - set: /opt/sd/meta set foo bar && echo $?
+  next:
+    image: node:6
+    steps:
       - get: /opt/sd/meta get foo && echo $?
       - cat: cat /sd/meta/meta.json
+      - sleep: sleep 10000
