@@ -15,4 +15,4 @@ jobs:
       - sleep: sleep 10000
       - get: /opt/sd/meta get foo && echo $?
       - cat: cat /sd/meta/meta.json
-      - sleep: sleep 10000
+      - sleep2: sleep 10000
