@@ -12,7 +12,7 @@ jobs:
   next:
     image: node:6
     steps:
-      - sleep: sleep 10000
+      #- sleep: sleep 10000
       - get: /opt/sd/meta get foo && echo $?
       - cat: cat /sd/meta/meta.json
       - sleep2: sleep 10000
