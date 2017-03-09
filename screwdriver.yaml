@@ -12,6 +12,6 @@ jobs:
   next:
     image: node:6-wheezy
     steps:
-      - get: /opt/sd/meta get foo
-      - cat: cat /sd/meta/meta.json
+      - get: /opt/sd/meta get foo && echo $? 
+      - cat: cat /sd/meta/meta.json && echo $? 
       - sleep2: sleep 10000
