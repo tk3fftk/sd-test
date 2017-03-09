@@ -10,7 +10,7 @@ jobs:
       - set: /opt/sd/meta set foo bar && echo $? 
       - get: /opt/sd/meta get foo
   next:
-    image: node:6
+    image: node:6-wheezy
     steps:
       - sleep1: sleep 10000
       - get: /opt/sd/meta get foo
