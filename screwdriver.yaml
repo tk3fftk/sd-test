@@ -7,7 +7,6 @@ jobs:
       - pack: npm pack
       - printenv: printenv
       - mv: mv screwdriver-sd-test-0.0.1.tgz $SD_ARTIFACTS_DIR
-      - sleep: sleep 10000
       - set: meta set foo bar && echo $? 
       - get: meta get foo
   next:
